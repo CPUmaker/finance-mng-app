@@ -1,0 +1,15 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+    $.cookie('user_id', null, {path: '/', secure: false});
+    $(window).attr('location', './login/signin.html');
+</script>
+</body>
+</html>

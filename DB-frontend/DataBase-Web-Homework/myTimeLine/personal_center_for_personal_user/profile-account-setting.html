@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/line-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/line-awesome-font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+</head>
+
+
+<body>
+
+
+	<div class="wrapper">
+
+		<div class="nav-block">
+            <nav class="nav"> 
+				<a href="../index.html" class="nav-item" active-color="orange">我的账单</a> 
+				<a href="#" class="nav-item is-active" active-color="blue">个人中心</a>
+				<a href="../community/community.html" class="nav-item" active-color="red">社区</a> 
+				<a href="../assist/HomePage.html" class="nav-item" active-color="red">小助手</a> 
+				<a href="../aboutUs/about_us.html" class="nav-item" active-color="green">关于我们</a>
+				<a href="../../index.html" class="nav-item" active-color="rebeccapurple">退出登录</a>
+				<span class="nav-indicator"></span>
+        	</nav>
+        </div>
+
+
+		<section class="profile-account-setting">
+			<div class="container">
+				<div class="account-tabs-setting">
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="acc-leftbar">
+								<div class="nav nav-tabs" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link active" id="nav-acc-tab" data-toggle="tab"
+										href="#nav-acc" role="tab" aria-controls="nav-acc" aria-selected="true"><i
+											class="la la-cogs"></i>Account Info</a>
+									<a class="nav-item nav-link" id="nav-status-tab" data-toggle="tab"
+										href="#nav-status" role="tab" aria-controls="nav-status"
+										aria-selected="false"><i class="fa fa-line-chart"></i>Status</a>
+									<a class="nav-item nav-link" id="nav-password-tab" data-toggle="tab"
+										href="#nav-password" role="tab" aria-controls="nav-password"
+										aria-selected="false"><i class="fa fa-lock"></i>Change Password</a>
+									<a class="nav-item nav-link" id="nav-requests-tab" data-toggle="tab"
+										href="#nav-requests" role="tab" aria-controls="nav-requests"
+										aria-selected="false"><i class="fa fa-group"></i>Company Following</a>
+									<a class="nav-item nav-link" id="nav-acc-card-tab" data-toggle="tab"
+										href="#nav-acc-card" role="tab" aria-controls="nav-acc-card"
+										aria-selected="false"><i class="fa fa-credit-card-alt"></i>Account Card</a>
+								</div>
+							</div>
+							<!--acc-leftbar end-->
+						</div>
+						<div class="col-lg-9">
+							<div class="tab-content" id="nav-tabContent">
+								<div class="tab-pane fade show active" id="nav-acc" role="tabpanel"
+									aria-labelledby="nav-acc-tab">
+									<div class="acc-setting">
+										<h3>Account Info</h3>
+										<div class="cp-field">
+											<h5>User Name</h5>
+											<div class="cpp-fiel">
+												<input type="text" name="username" placeholder="User Name" id="acc-info-username">
+												<i class="fa fa-user-circle"></i>
+											</div>
+										</div>
+										<div class="cp-field">
+											<h5>Email</h5>
+											<div class="cpp-fiel">
+												<input type="text" name="email" placeholder="Email" id="acc-info-email">
+												<i class="fa fa-envelope"></i>
+											</div>
+										</div>
+										<div class="save-stngs">
+											<ul>
+												<li><button type="submit" id="acc-info-save-btn">Save Setting</button></li>
+											</ul>
+										</div>
+										<!--save-stngs end-->
+									</div>
+									<!--acc-setting end-->
+								</div>
+								<div class="tab-pane fade" id="nav-status" role="tabpanel"
+									aria-labelledby="nav-status-tab">
+									<div class="acc-setting">
+										<h3>Profile Status</h3>
+										<div class="profile-bx-details">
+											<div class="row" style="margin: 0px 0px 0px 0px">
+												<div class="col-lg-4 col-md-8 col-sm-14">
+													<div class="profile-bx-info">
+														<div class="pro-bx">
+															<img src="images/pro-icon1.png" alt="">
+															<div class="bx-info">
+																<h3 id="status-total">$5,145</h3>
+																<h5>Total Money</h5>
+															</div>
+															<!--bx-info end-->
+														</div>
+														<!--pro-bx end-->
+														<p>There is the sum of what you have pay and come in.</p>
+													</div>
+													<!--profile-bx-info end-->
+												</div>
+												<div class="col-lg-4 col-md-8 col-sm-14">
+													<div class="profile-bx-info">
+														<div class="pro-bx">
+															<img src="images/pro-icon2.png" alt="">
+															<div class="bx-info">
+																<h3 id="status-income">$4,745</h3>
+																<h5>Income</h5>
+															</div>
+															<!--bx-info end-->
+														</div>
+														<!--pro-bx end-->
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+													</div>
+													<!--profile-bx-info end-->
+												</div>
+											</div>
+											<div class="row" style="margin: 20px 0px 0px 0px">
+												<div class="col-lg-4 col-md-8 col-sm-14">
+													<div class="profile-bx-info">
+														<div class="pro-bx">
+															<img src="images/pro-icon3.png" alt="">
+															<div class="bx-info">
+																<h3 id="status-pay">$1,145</h3>
+																<h5>Pay</h5>
+															</div>
+															<!--bx-info end-->
+														</div>
+														<!--pro-bx end-->
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+													</div>
+													<!--profile-bx-info end-->
+												</div>
+												<div class="col-lg-4 col-md-8 col-sm-14">
+													<div class="profile-bx-info">
+														<div class="pro-bx">
+															<img src="images/pro-icon4.png" alt="">
+															<div class="bx-info">
+																<h3 id="status-card-num">130</h3>
+																<h5>Total Cardss</h5>
+															</div>
+															<!--bx-info end-->
+														</div>
+														<!--pro-bx end-->
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+													</div>
+													<!--profile-bx-info end-->
+												</div>
+											</div>
+										</div>
+										<!--profile-bx-details end-->
+										<div class="pro-work-status">
+											<!-- <h4>Work Status  -  Last Months Working Status</h4> -->
+										</div>
+										<!--pro-work-status end-->
+									</div>
+									<!--acc-setting end-->
+								</div>
+								<div class="tab-pane fade" id="nav-password" role="tabpanel"
+									aria-labelledby="nav-password-tab">
+									<div class="acc-setting">
+										<h3>Change Password</h3>
+										<div class="cp-field">
+											<h5>Old Password</h5>
+											<div class="cpp-fiel">
+												<input type="password" name="old-password" placeholder="Old Password" id="password-old">
+												<i class="fa fa-lock"></i>
+											</div>
+										</div>
+										<div class="cp-field">
+											<h5>New Password</h5>
+											<div class="cpp-fiel">
+												<input type="password" name="new-password" placeholder="New Password" id="password-new">
+												<i class="fa fa-lock"></i>
+											</div>
+										</div>
+										<div class="cp-field">
+											<h5>Repeat Password</h5>
+											<div class="cpp-fiel">
+												<input type="password" name="repeat-password"
+													placeholder="Repeat Password" id="password-repeat">
+												<i class="fa fa-lock"></i>
+											</div>
+										</div>
+										<div class="cp-field">
+											<h5><a href="#" title="">Forgot Password?</a></h5>
+										</div>
+										<div class="save-stngs pd2">
+											<ul>
+												<li><button type="submit" id="password-save-btn">Save Setting</button></li>
+											</ul>
+										</div>
+										<!--save-stngs end-->
+									</div>
+									<!--acc-setting end-->
+								</div>
+
+								<div class="tab-pane fade" id="nav-requests" role="tabpanel"
+									aria-labelledby="nav-requests-tab">
+									<div class="acc-setting">
+										<h3>Company Following</h3>
+										<div class="requests-list">
+											<div class="request-details">
+												<div class="noty-user-img">
+													<img src="images/resources/r-img1.png" alt="">
+												</div>
+												<div class="request-info">
+													<h3>Jessica William</h3>
+													<span>Graphic Designer</span>
+												</div>
+												<div class="accept-feat">
+													<ul>
+														<li><button type="submit" class="accept-req">Accept</button>
+														</li>
+														<li><button type="submit" class="close-req"><i
+																	class="la la-close"></i></button></li>
+													</ul>
+												</div>
+												<!--accept-feat end-->
+											</div>
+											<!--request-detailse end-->
+											<div class="request-details">
+												<div class="noty-user-img">
+													<img src="images/resources/r-img2.png" alt="">
+												</div>
+												<div class="request-info">
+													<h3>John Doe</h3>
+													<span>PHP Developer</span>
+												</div>
+												<div class="accept-feat">
+													<ul>
+														<li><button type="submit" class="accept-req">Accept</button>
+														</li>
+														<li><button type="submit" class="close-req"><i
+																	class="la la-close"></i></button></li>
+													</ul>
+												</div>
+												<!--accept-feat end-->
+											</div>
+											<!--request-detailse end-->
+											<div class="request-details">
+												<div class="noty-user-img">
+													<img src="images/resources/r-img3.png" alt="">
+												</div>
+												<div class="request-info">
+													<h3>Poonam</h3>
+													<span>Wordpress Developer</span>
+												</div>
+												<div class="accept-feat">
+													<ul>
+														<li><button type="submit" class="accept-req">Accept</button>
+														</li>
+														<li><button type="submit" class="close-req"><i
+																	class="la la-close"></i></button></li>
+													</ul>
+												</div>
+												<!--accept-feat end-->
+											</div>
+											<!--request-detailse end-->
+											<div class="request-details">
+												<div class="noty-user-img">
+													<img src="images/resources/r-img4.png" alt="">
+												</div>
+												<div class="request-info">
+													<h3>Bill Gates</h3>
+													<span>C & C++ Developer</span>
+												</div>
+												<div class="accept-feat">
+													<ul>
+														<li><button type="submit" class="accept-req">Accept</button>
+														</li>
+														<li><button type="submit" class="close-req"><i
+																	class="la la-close"></i></button></li>
+													</ul>
+												</div>
+												<!--accept-feat end-->
+											</div>
+											<!--request-detailse end-->
+											<div class="request-details">
+												<div class="noty-user-img">
+													<img src="images/resources/r-img5.png" alt="">
+												</div>
+												<div class="request-info">
+													<h3>Jessica William</h3>
+													<span>Graphic Designer</span>
+												</div>
+												<div class="accept-feat">
+													<ul>
+														<li><button type="submit" class="accept-req">Accept</button>
+														</li>
+														<li><button type="submit" class="close-req"><i
+																	class="la la-close"></i></button></li>
+													</ul>
+												</div>
+												<!--accept-feat end-->
+											</div>
+											<!--request-detailse end-->
+											<div class="request-details">
+												<div class="noty-user-img">
+													<img src="images/resources/r-img6.png" alt="">
+												</div>
+												<div class="request-info">
+													<h3>John Doe</h3>
+													<span>PHP Developer</span>
+												</div>
+												<div class="accept-feat">
+													<ul>
+														<li><button type="submit" class="accept-req">Accept</button>
+														</li>
+														<li><button type="submit" class="close-req"><i
+																	class="la la-close"></i></button></li>
+													</ul>
+												</div>
+												<!--accept-feat end-->
+											</div>
+											<!--request-detailse end-->
+										</div>
+										<!--requests-list end-->
+									</div>
+									<!--acc-setting end-->
+								</div>
+								<div class="tab-pane fade" id="nav-acc-card" role="tabpanel"
+									aria-labelledby="nav-acc-card-tab">
+									<div class="acc-setting">
+										<h3>Account Card<a href="javascript:void(0);" onclick="add_card()"><i class="fa fa-plus" style="float: right"></i></a></h3>
+										
+										<div class="col-lg-8 col-md-8 col-sm-14" id="card-list">
+											<div class="profile-bx-info" style="margin: 20px 20px 20px 20px">
+												<div class="pro-bx">
+													<img src="images/abc.png" alt="">
+													<div class="bx-info">
+														<h1>中国农业银行</h1>
+													</div>
+												</div>
+												<div class="pro-bx">
+													<div class="bx-info">
+														<h3 id="status-total">$5,145</h3>
+														<h5>Total Money</h5>
+													</div>
+												</div>
+												<p><b>卡号：</b>1425823507239485720345</p>
+											</div>
+											<div class="profile-bx-info" style="margin: 20px 20px 20px 20px">
+												<div class="pro-bx">
+													<img src="images/icbc.png" alt="">
+													<div class="bx-info">
+														<h1>中国工商银行</h1>
+													</div>
+												</div>
+												<div class="pro-bx">
+													<div class="bx-info">
+														<h3 id="status-total">$5,145</h3>
+														<h5>Total Money</h5>
+													</div>
+												</div>
+												<p><b>卡号：</b>1425823507239485720345</p>
+												<p><b>有效期：</b>2022-02-02</p>
+											</div>
+											<div class="profile-bx-info" style="margin: 20px 20px 20px 20px">
+												<div class="pro-bx">
+													<img src="images/ccb.png" alt="">
+													<div class="bx-info">
+														<h1>中国建设银行</h1>
+													</div>
+												</div>
+												<div class="pro-bx">
+													<div class="bx-info">
+														<h3 id="status-total">$5,145</h3>
+														<h5>Total Money</h5>
+													</div>
+												</div>
+												<p><b>卡号：</b>1425823507239485720345</p>
+											</div>
+											<!--profile-bx-info end-->
+										</div>
+										
+									</div>
+									<!--acc-setting end-->
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--account-tabs-setting end-->
+			</div>
+		</section>
+
+
+
+		<footer>
+			<div class="footy-sec mn no-margin">
+				<div class="container">
+					<ul>
+						<li><a href="#" title="">Help Center</a></li>
+						<li><a href="#" title="">Privacy Policy</a></li>
+						<li><a href="#" title="">Community Guidelines</a></li>
+						<li><a href="#" title="">Cookies Policy</a></li>
+						<li><a href="#" title="">Career</a></li>
+						<li><a href="#" title="">Forum</a></li>
+						<li><a href="#" title="">Language</a></li>
+						<li><a href="#" title="">Copyright Policy</a></li>
+					</ul>
+					<p><img src="images/copy-icon2.png" alt="">Copyright 2017</p>
+					<img class="fl-rgt" src="images/logo2.png" alt="">
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!--theme-layout end-->
+
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootbox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/myJs.js"></script>
+	<script type="text/javascript" src="js/nav.js"></script>
+
+
+</body>
+
+</html>

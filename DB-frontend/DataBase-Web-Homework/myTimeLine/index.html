@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的账单</title>
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+    <link rel="Stylesheet" type="text/css" href="css/loginDialog.css" />
+    <link rel="stylesheet" type="text/css" href="css/jHsDate.css" />
+	
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/nav.css">
+	
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="nav-block">
+            <nav class="nav"> 
+            <a href="./index.html" class="nav-item is-active" active-color="orange">我的账单</a> 
+            <a href="./personal_center_for_personal_user/profile-account-setting.html" class="nav-item" active-color="blue">个人中心</a>
+            <a href="./community/community.html" class="nav-item" active-color="red">社区</a> 
+            <a href="./assist/HomePage.html" class="nav-item" active-color="red">小助手</a> 
+            <a href="./aboutUs/about_us.html" class="nav-item" active-color="green">关于我们</a>
+            <a href="../index.html" class="nav-item" active-color="rebeccapurple">退出登录</a>
+            <span class="nav-indicator"></span>
+        </nav>
+        </div>
+        <div class="row">
+            <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
+            <h1>我的账单</h1>
+                <div class="timeline timeline-line-dotted" id="add_there">
+                    <span class="timeline-label">
+                        <span class="label label-primary">17.03.2016</span>
+                    </span>
+                    <a href="#" id="modify_box">
+                    <div class="timeline-item">
+                        
+                        <div class="timeline-point timeline-point-success">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <div class="timeline-event">
+                            <div class="timeline-heading">
+                                <h4>MoneyService Transfer</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Money transfer. By Alex, Wallet ID: 1234567890, Amount: 10$</p>
+                                <p>Money transfer. By Alex, Wallet ID: 1234567890, Amount: 10$</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">17.03.2016 10:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+
+                    <span class="timeline-label">
+                        <span class="label label-info">label label-info</span>
+                    </span>
+                </duv>
+        </div>
+    </div>
+
+    <div id="LoginBox">
+        <div class="row1">
+            <span id="LoginBoxTitle">修改账单</span><a href="javascript:void(0)" title="关闭窗口" class="close_btn" id="closeBtn">×</a>
+        </div>
+        <div class="row">
+            &nbsp;&nbsp;日&nbsp;&nbsp;期&nbsp;&nbsp; <span class="inputBox">
+                <input type="text" id="date_pop" placeholder="" />
+            </span><a href="javascript:void(0)" title="日期不能为空" class="warning" id="warn">*</a>
+        </div>
+		<div class="row">
+            &nbsp;&nbsp;金&nbsp;&nbsp;额&nbsp;&nbsp; <span class="inputBox">
+                <input type="text" id="quantity_pop" placeholder="" />
+            </span><a href="javascript:void(0)" title="金额不能为空" class="warning" id="warn2">*</a>
+        </div>
+		<div class="row">
+            &nbsp;&nbsp;收&nbsp;&nbsp;支&nbsp;&nbsp; <span class="inputBox">
+                <!--input type="text" id="direction_pop" placeholder="" /-->
+				<select id="direction_pop" name="direction_pop"></select>
+            </span><a href="javascript:void(0)" title="提示" class="warning" id="warn3">*</a>
+        </div>
+        <div class="row">
+            &nbsp;&nbsp;种&nbsp;&nbsp;类&nbsp;&nbsp; <span class="inputBox">
+                <!--input type="text" id="type_pop" placeholder="" /-->
+				<select id="type_pop" name="type_dropbox"></select>
+            </span><a href="javascript:void(0)" title="提示" class="warning" id="warn4">*</a>
+        </div>
+        <div class="row">
+            <a href="#" id="loginbtn">修&nbsp;&nbsp;改</a>
+            <a href="#" id="deletebtn">删&nbsp;&nbsp;除</a>
+            <a href="#" id="createbtn">新&nbsp;&nbsp;增</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/timeline.js"></script>
+    <script type="text/javascript" src="js/jHsDate.js"></script>
+    <script type="text/javascript" src="js/directionAndType.js"></script>
+    <script type="text/javascript" src="js/droplist.js"></script>
+    <script type="text/javascript" src="js/pop_window.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+</body>

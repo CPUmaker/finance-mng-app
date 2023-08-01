@@ -1,0 +1,103 @@
+
+*{
+   margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+
+}
+.middle{
+    position:absolute;
+    top:50%;
+    left:110px;
+    transform:translate(-50%,-50%);
+}
+.menu{
+    width:250px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.item{
+    border-top:1px solid #3498db;
+    overflow:hidden;
+}
+.btn{
+    display:block;
+    padding:16px 20px;
+    background: #3498db;
+    color:white;
+    postion:center;
+}
+.btn:before{
+    content:"";
+    position:absolute;
+    width:14px;
+    height:14px;
+    background: #3498db;
+    left:90%;
+   margin-top:29px ;
+    transform: rotate(45deg);
+
+
+}
+.btn i{
+ margin-right: 10px;
+}
+.smenu{
+    background:black;
+    overflow: hidden;
+    transition:max-height 0.3s;
+    max-height: 0em;
+
+}
+.smenu a{
+    display:block;
+    padding:10px 20px;
+    color:white;
+    font-size: 10px;
+
+    position:relative;
+}
+.smenu a:before{
+    content:"";
+    position:absolute;
+    width:6px;
+    height:100%;
+    background: #3498db;
+    left:0;
+    top:0;
+    transition:0.3s;
+    opacity:0;
+}
+.smenu a:hover:before{
+    opacity:1;
+}
+.item:target .smenu{
+    max-height: 10em;
+}
+.btn1{
+    display:block;
+    padding:16px 20px;
+    background: #3498db;
+    color:white;
+    position:center;
+
+}
+.appear{
+    padding-top: 20%;
+}
+.appear button{
+    width:30px;
+height:150px;
+    background:#3498db;
+    color:white;
+    border-radius: 3px;
+    border:solid white;
+
+
+}
+.appear button:hover{
+     width:32px;
+    height:180px;
+    transition: 0.4s;
+ }

@@ -1,0 +1,11 @@
+cos-python-sdk-v5
+Django>=2.2.3
+psycopg2
+pylint==2.3.1
+pylint-django
+django-nose==1.4.6
+coverage==4.5.3
+pillow
+pyjwt
+requests
+pandas

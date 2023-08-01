@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>文章创建</title>
+
+	<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+	<link href="dist/summernote.css" rel="stylesheet" />
+	<link href="css/nav.css" rel="stylesheet" />
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+	<script src="dist/summernote.js"></script>
+	<script src="dist/lang/summernote-zh-CN.js"></script> <!-- 中文-->
+
+	<style>
+		.m {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+
+	<script>
+		$(function () {
+			$('.summernote').summernote({
+				height: 400,
+				tabsize: 2,
+				lang: 'zh-CN'
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div class="nav-block">
+            <nav class="nav">
+                <a href="../index.html" class="nav-item is-active" active-color="orange">文章发布</a>
+				<a href="../personal_center_for_company/profile-account-setting.html" class="nav-item" active-color="blue">个人中心</a>
+                <a href="../aboutUs/about_us.html" class="nav-item" active-color="green">关于我们</a>
+                <a href="../../index.html" class="nav-item" active-color="rebeccapurple">退出登录</a>
+                <span class="nav-indicator"></span>
+            </nav>
+        </div>
+
+	<div class="m">
+		<div class="nav-text">
+			<h2 class="wiki-page-title">
+			Create New Article
+			</h2>
+		</div>
+		<div class="form-group row">
+			<div class="col-sm-12"><label class="control-label-full-width" for="wiki_title">Title</label></div>
+			<div class="col-sm-12">
+				<input class="form-control qa-wiki-title-textbox" value="New Title" required="required"
+					autofocus="autofocus" placeholder="Page title" type="text" name="wiki[title]" id="wiki_title" />
+			</div>
+		</div>
+		<div class="form-group row">
+			<div class="col-sm-12"><label class="control-label-full-width" for="wiki_title">Content</label></div>
+			<div class="col-sm-12">
+				<div class="summernote">Content Here...</div>
+			</div>
+		</div>
+
+		<div class="form-actions">
+			<input type="buttom" name="commit" value="Create page" id="create-btn"
+				class="btn-success btn qa-create-page-button rspec-create-page-button"
+				data-disable-with="Create page" />
+		</div>
+	</div>
+
+	<script src="js/create_article.js"></script>
+	<script src="js/nav.js"></script>
+
+</body>
+
+</html>

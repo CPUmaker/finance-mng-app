@@ -1,0 +1,148 @@
+.navigation
+{
+    position :fixed;
+    top:0;
+    right:-400px;
+    width:300px;
+    height:100vh;
+    background: cornflowerblue;
+    z-index:1;
+    display: grid;
+    place-items:center;
+    transition: 0.8s;
+}
+
+.navigation ul{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+}
+.navigation ul li
+{
+    list-style: none;
+}
+.navigation ul li a
+{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight:600;
+    text-transform: uppercase;
+    color:white;
+
+}
+.navigation ul li a:hover
+{
+    list-style: none;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight:600;
+    text-transform: uppercase;
+    color:white;
+    transition: 0.4s;
+}
+.navigation ul li a1
+{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight:600;
+    text-transform: uppercase;
+    color:white;
+
+}
+.navigation ul li a1:hover
+{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.75em;
+    font-weight:600;
+    text-transform: uppercase;
+    color:white;
+    transition: 0.4s;
+}
+label #btn,label #cancel{
+    position: absolute;
+   cursor:pointer;
+}
+label #btn{
+    top:10px;
+    right: 60px;
+    font-size:40px;
+}
+label #cancel{
+    top:10px;
+    z-index: 20;
+    right:-360px;
+    font-size:40px;
+    color:white;
+    transition:0.8s;
+}
+label1 #appear{
+    top:10px;
+    left: 60px;
+    font-size:50px;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .navigation{
+    right: 0;
+}
+#check:checked ~ label #btn{
+    right:300px;
+opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+right:260px;
+}
+
+#check1{
+    display:none;
+}
+.RobotAssist{
+    position:relative;
+    font-weight:700;
+    color:black;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    transition:0.6s;
+}
+.concretContent a{
+    position: relative;
+    display:inline-block;
+    margin-top: 20px;
+    margin-right: 80px;
+    background: cornflowerblue;
+    color:#fff;
+    padding:10px 30px;
+    text-decoration:none;
+    font-size: 1.2em;
+}
+.concretContent a:hover{
+    position: relative;
+    display:inline-block;
+    margin-top: 20px;
+    margin-right: 80px;
+    background: cornflowerblue;
+    color:#fff;
+    padding:15px 45px;
+    text-decoration:none;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+h2{
+    font-family: 'Pacifico', cursive;
+}
+body{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+.middle{
+    display: none;
+
+}
