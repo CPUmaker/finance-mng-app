@@ -4,9 +4,10 @@ frontend of database project
 
 Tech:
 
+* HTML/CSS
 * JQuery
 * BootStrap
-* BootBox s
+* BootBox
 
 Rules:
 
